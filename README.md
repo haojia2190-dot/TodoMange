@@ -26,6 +26,20 @@ mvn spring-boot:run
 ```
 
 
+
+## 前端页面（Vue）
+
+项目已在 `frontend/` 目录提供基于 Vue 3 的 Todo 管理页面，覆盖后端接口的创建、查询、更新、删除能力。
+
+启动前端页面：
+
+```bash
+cd frontend
+python3 -m http.server 5173
+```
+
+访问 `http://localhost:5173`。页面默认请求 `http://localhost:8080/api/todos`，因此请先启动 Spring Boot 后端。
+
 ## 项目结构（分层）
 
 - controller：对外提供 REST 接口
